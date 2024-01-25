@@ -5,9 +5,9 @@ phases:
       python: 3.9
   pre_build:
     commands:
-      - cd $(lambda)
+      - cd $lambda
       - pip install -r requirements.txt
 artifacts:
     files:
-      - '$(lambda)/*'
-    name: $(lambda)
+      - '$lambda/*'
+    name: $lambda
