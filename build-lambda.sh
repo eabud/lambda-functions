@@ -31,3 +31,5 @@ rm -rf venv/
 
 aws s3 cp "$lambda_name".zip s3://"$account_id"-lambda-functions/
 rm "$lambda_name".zip
+
+aws lambda update-function-code --function-name "$lambda_name" --s3-bucket lambda-functions-"$account_id" --s3-key "$lambda_name".zip --no-cli-pager
