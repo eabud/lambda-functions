@@ -23,7 +23,7 @@ python3 -m pip install \
 
 cd function/
 
-zip -r ../$lambda_name.zip ./*
+zip -r ../"$lambda_name".zip ./*
 cd ..
 
 rm -rf function/
